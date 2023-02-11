@@ -1,3 +1,5 @@
+include components/header/header.pug
+
 doctype html
 html(lang='ru')
   head
@@ -6,98 +8,5 @@ html(lang='ru')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title М-групп-Главная
   body
-    header.header
-      .container
-        .header-top
-          .header__logo
-            a(href='#')
-              img.header__logo__image(src=require('./images/header/logo.svg') alt='logo')
-          nav#nav.header__menu
-            ul#header__list.header__list
-              li.header__list__item
-                a.header__list__link(href='index.html') Главная
-              li.header__list__item
-                a.header__list__link(href='pages/company.html') О Компании
-              //-  submenu рефакторинг
-              li.header__list__item.submenu-link
-                a.header__list__link(href='#') Услуги
-                ul.header__submenu
-                  li.header__list__item
-                    a.header__list__link(href='pages/stellazhi.html') Стеллажи
-                  li.header__list__item
-                    a.header__list__link(href='pages/shkafy.html') Шкафы
-                  li.header__list__item
-                    a.header__list__link(href='pages/teplicy.html') Теплицы
-                  li.header__list__item
-                    a.header__list__link(href='pages/zagrazhdeniya.html') Заграждения
-              li.header__list__item
-                a.header__list__link(href='pages/gallery.html') Галерея
-              li.header__list__item
-                a.header__list__link(href='pages/contacts.html') Контакты
-          //-  refactor
-          .menu-block
-            .burger
-              a.menu-btn(onclick='return false' href='#')
-                span
-            nav.menu-responsive_navigation
-              ul.menu-responsive_list
-                li.menu-responsive_list-item
-                  //- a.menu-responsive_link(href='index.html') Главная
-                li.menu-responsive_list-item
-                  //- a.menu-responsive_link(href='pages/company.html') О компании
-                li.menu-responsive_list-item
-                  //- a.menu-responsive_link(href='pages/stellazhi.html') Стеллажи
-                li.menu-responsive_list-item
-                  //- a.menu-responsive_link(href='pages/shkafy.html') Шкафы
-                li.menu-responsive_list-item
-                  //- a.menu-responsive_link(href='pages/teplicy.html') Теплицы
-                li.menu-responsive_list-item
-                  //- a.menu-responsive_link(href='pages/zagrazhdeniya.html') Заграждения
-                li.menu-responsive_list-item
-                  //- a.menu-responsive_link(href='pages/gallery.html') Галерея
-                li.menu-responsive_list-item
-                  //- a.menu-responsive_link(href='pages/contacts.html') Контакты
-          .header__search
-            input.header__search__input(type='text' placeholder='Поиск...')
-            .header__search__logo
-              img(src=require('./images/header/search-icon.svg') alt='search-icon')
-        //- content__item-adaptive???
-        .header-bottom
-          .header__content
-            #content__item-adaptive.header__content__box
-              h1.header__content__title
-                span ООО
-                span «М-групп»
-              //-  сравнить в макетом
-              p.content__text
-                | более 10 лет осуществляет производство и продажу металлических изделий и
-                | оборудования, являясь единственным за Уралом производителем передвижных (мобильных) архивных стеллажей.
-              a.content__link(href='#' data-scroll='#info') Узнать больше
-            #content__item-box1.header__content__box.header__content__box-1
-              //- // <div class="content__item-box1">
-              //- // <div class="content__item-box1--inner">
-              .header__content-bigimg
-                //- img.header__content-img(src='img/header/block-image1.jpg' alt='')
-                .header__content__image-bg
-                a.popup-photo(target='_blank' href='img/header/popup (1).jpg')
-                  .content__item-img--wrapper
-                    //- img.content__img-lupa(src='img/header/lupa.png' alt='')
-                    span#content__img-title--left.content__img-title Стеллажи
-              //- // </div>
-              //- // </div>
-              .content__item-box2
-                .content__item-box2--inner
-                  a.popup-photo(target='_blank' href='img/header/popup (2).jpg')
-                    .content__item-img1--wrapper
-                      //- img.content__img-lupa(src='img/header/lupa.png' alt='')
-                      span.content__img-title Ограждения
-                  //- img.content__item-img1(src='img/header/block-image3.jpg' alt='')
-                .content__item-box2--inner
-                  .content__item-img2--wrapper
-                    a.popup-photo(target='_blank' href='img/header/popup.jpg')
-                      .content__item-img1--wrapper
-                        //- img.content__img-lupa(src='img/header/lupa.png' alt='')
-                        span.content__img-title Шкафы
-                    //- img.content__item-img2(src='img/header/block-image2.jpg' alt='')
-            .header__bg
-              //- img.header__bg-img(src='img/header/bg-lines.png' alt='')
+    +header 
+  
