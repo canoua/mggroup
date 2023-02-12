@@ -1,34 +1,35 @@
 mixin header  
   header.header
-    .container
-      .header-top
-        .header__logo
-          a(href='#')
-            img.header__logo__image(src=require('./images/header/logo.svg') alt='logo')
-        nav#nav.header__menu
-          ul#header__list.header__list
-            li.header__list__item
-              a.header__list__link(href='index.html') Главная
-            li.header__list__item
-              a.header__list__link(href='pages/company.html') О Компании
-            li.header__list__item.submenu-link
-              a.header__list__link(href='#') Услуги
-              ul.header__submenu
-                li.header__list__item
-                  a.header__list__link(href='pages/stellazhi.html') Стеллажи
-                li.header__list__item
-                  a.header__list__link(href='pages/shkafy.html') Шкафы
-                li.header__list__item
-                  a.header__list__link(href='pages/teplicy.html') Теплицы
-                li.header__list__item
-                  a.header__list__link(href='pages/zagrazhdeniya.html') Заграждения
-            li.header__list__item
-              a.header__list__link(href='pages/gallery.html') Галерея
-            li.header__list__item
-              a.header__list__link(href='pages/contacts.html') Контакты
-        .header__search
+    .header-top
+      .container
+        .header-top-inner
+          .header__logo
+            a(href='#')
+              img.header__logo__image(src=require('./images/header/logo.svg') alt='logo')
+          nav#nav.header__menu
+            ul#header__list.header__list
+              li.header__list__item
+                a.header__list__link(href='#') Главная
+              li.header__list__item
+                a.header__list__link(href='#') О Компании
+              li.header__list__item.submenu-link
+                a.header__list__link(href='#') Услуги
+                ul.header__submenu
+                  li.header__list__item
+                    a.header__list__link(href='#') Стеллажи
+                  li.header__list__item
+                    a.header__list__link(href='#') Шкафы
+                  li.header__list__item
+                    a.header__list__link(href='#') Теплицы
+                  li.header__list__item
+                    a.header__list__link(href='#') Заграждения
+              li.header__list__item
+                a.header__list__link(href='#') Галерея
+              li.header__list__item
+                a.header__list__link(href='#') Контакты
+          .header__search
           input.header__search__input(type='text' placeholder='Поиск...')
           .header__search__logo
             img(src=require('./images/header/search-icon.svg') alt='search-icon')
       
-      .header-bottom
+    .header-bottom
