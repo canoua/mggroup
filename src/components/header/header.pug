@@ -28,8 +28,19 @@ mixin header
               li.header__list__item
                 a.header__list__link(href='#') Контакты
           .header__search
-          input.header__search__input(type='text' placeholder='Поиск...')
-          .header__search__logo
-            img(src=require('./images/header/search-icon.svg') alt='search-icon')
+            input.header__search__input(type='text' placeholder='Поиск...')
+            
+            img.header__search__logo(src=require('./images/header/search-icon.svg') alt='search-icon')
       
     .header-bottom
+      .container 
+        .header-bottom-inner 
+          .header__box 
+            h1.header__title ООО «М-групп»
+            .header__info 
+              |более 10 лет осуществляет производство и 
+              |продажу металлических изделий и оборудования, 
+              |являясь единственным за Уралом производителем 
+              |передвижных (мобильных) архивных стеллажей.
+            a.header__btn(href="#") Узнать больше 
+          .header__box 1

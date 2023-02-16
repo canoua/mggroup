@@ -8,14 +8,50 @@
   &-top{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 73px;
   }
 
   &__title{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 148.9%;
     color: #FFFFFF;
+    margin-bottom: 12px;
+  }
+
+  &__list{
+
+    &__link,
+    &__text{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 148.9%;
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    &__link:hover{
+      color: #fff;
+    }
+  }
+
+  &__copy{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 148.9%;
+    color: #FFFFFF;
+  }
+
+  &-bottom{
+    display: flex;
+    justify-content: space-between;
   }
 }
