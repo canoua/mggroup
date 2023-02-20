@@ -5,7 +5,7 @@ mixin header
         .header-top-inner
           .header__logo
             a(href='#')
-              img.header__logo__image(src=require('./images/header/logo.svg') alt='logo')
+              img.header__logo__image(src=require('./images/blocks/header/logo.svg') alt='logo')
           nav#nav.header__menu
             ul#header__list.header__list
               li.header__list__item
@@ -29,8 +29,7 @@ mixin header
                 a.header__list__link(href='#') Контакты
           .header__search
             input.header__search__input(type='text' placeholder='Поиск...')
-            
-            img.header__search__logo(src=require('./images/header/search-icon.svg') alt='search-icon')
+            img.header__search__logo(src=require('./images/blocks/header/search-icon.svg') alt='search-icon')
       
     .header-bottom
       .container 
@@ -43,11 +42,11 @@ mixin header
               |являясь единственным за Уралом производителем 
               |передвижных (мобильных) архивных стеллажей.
             a.header__btn(href="#") Узнать больше 
-          .header__box 
-            .header__box__image-wrapper 
-              img(src=require("./images/header/photo1.jpg") alt="photo1")
-            .header__box__image-wrapper 
-              img(src=require("./images/header/photo2.jpg") alt="photo2")
-            .header__box__image-wrapper 
-              img(src=require("./images/header/photo3.jpg") alt="photo3")
+          .header__box.header__box_right.parent 
+            .header__box__image-wrapper.div1 
+              img(src=require("./images/blocks/header/photo1.jpg") alt="photo1")
+            .header__box__image-wrapper.div2 
+              img(src=require("./images/blocks/header/photo2.jpg") alt="photo2")
+            .header__box__image-wrapper.div3  
+              img(src=require("./images/blocks/header/photo3.jpg") alt="photo3")
             

@@ -1,5 +1,6 @@
-include components/header/header.pug
-include components/footer/footer.pug
+include components/blocks/header/header.pug
+include components/pages/main.pug
+include components/blocks/footer/footer.pug
 
 doctype html
 html(lang='ru')
@@ -10,5 +11,6 @@ html(lang='ru')
     title М-групп-Главная
   body
     +header 
+    +main
     +footer
   
