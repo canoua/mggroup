@@ -43,10 +43,10 @@ mixin header
               |передвижных (мобильных) архивных стеллажей.
             a.header__btn(href="#") Узнать больше 
           .header__box.header__box_right.parent 
-            .header__box__image-wrapper.div1 
-              img(src=require("./images/blocks/header/photo1.jpg") alt="photo1")
-            .header__box__image-wrapper.div2 
-              img(src=require("./images/blocks/header/photo2.jpg") alt="photo2")
-            .header__box__image-wrapper.div3  
-              img(src=require("./images/blocks/header/photo3.jpg") alt="photo3")
+            a(href="#").header__box__image-wrapper-1  
+              img.header__box__image(src=require("./images/blocks/header/photo1.jpg") alt="photo1")
+            a(href="#").header__box__image-wrapper-2  
+              img.header__box__image(src=require("./images/blocks/header/photo2.jpg") alt="photo2")
+            a(href="#").header__box__image-wrapper-3   
+              img.header__box__image(src=require("./images/blocks/header/photo3.jpg") alt="photo3")
             
