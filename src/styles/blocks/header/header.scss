@@ -133,10 +133,36 @@
   &__box{
     width: 50%;
 
+    &__loop{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__title{
+      font-family: 'Comfortaa';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 17px;
+      color: #FFFFFF;
+      position: absolute;
+      left: 13px;
+      bottom: 14px;
+    }
+
+    &_left{
+      margin-right: 8px;
+    }
+
     &_right{
       display: grid;
+      position: relative;
+      width: 464px;
       height: 484px;
       gap: 20px;
+      z-index: 1;
       grid-template-areas:
         "A A A A   A A A B   B B B B"
         "A A A A   A A A B   B B B B"
@@ -144,24 +170,76 @@
         "A A A A   A A A C   C C C C"
         "A A A A   A A A C   C C C C"
         "A A A A   A A A C   C C C C";
+      
+      &::before{
+        content:'';
+        position: absolute;
+        left: -12px;
+        top: -12px;
+        background-color:#0F8CD2;
+        width: 205px;
+        height: 178px;
+        z-index: -1;
+      }
     }
 
     &__image{
-      width: 100%;
-      height: 100%;
+      cursor: pointer;
 
+      &_hover{
+
+        &-1, &-2, &-3{
+          position: absolute;   
+          left: 0;
+          top: 0;
+          background: linear-gradient(212.11deg, rgba(15, 140, 210, 0.77) 0%, rgba(79, 79, 79, 0) 98.81%), rgba(79, 79, 79, 0.56);
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: .3s;
+        }
+        
+      }
+     
       &-wrapper{
         
         &-1{
           grid-area: A;
+          background-image: url('./../images/blocks/header/photo1.jpg');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          position: relative;
+
+          &:hover .header__box__image_hover-1{
+            opacity: 1;
+          }
         }
         
         &-2{
           grid-area: B;
+          background-image: url('./../images/blocks/header/photo2.jpg');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          position: relative;
+
+          &:hover .header__box__image_hover-2{
+            opacity: 1;
+          }
         }
 
         &-3{
           grid-area: C;
+          background-image: url('./../images/blocks/header/photo3.jpg');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          position: relative;
+
+          &:hover .header__box__image_hover-3{
+            opacity: 1;
+          }
         }
       }
     }

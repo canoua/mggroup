@@ -34,7 +34,7 @@ mixin header
     .header-bottom
       .container 
         .header-bottom-inner 
-          .header__box 
+          .header__box.header__box_left 
             h1.header__title ООО «М-групп»
             .header__info 
               |более 10 лет осуществляет производство и 
@@ -42,11 +42,17 @@ mixin header
               |являясь единственным за Уралом производителем 
               |передвижных (мобильных) архивных стеллажей.
             a.header__btn(href="#") Узнать больше 
-          .header__box.header__box_right.parent 
-            a(href="#").header__box__image-wrapper-1  
-              img.header__box__image(src=require("./images/blocks/header/photo1.jpg") alt="photo1")
+          .header__box.header__box_right 
+            a(href="#").header__box__image-wrapper-1 
+              .header__box__image_hover-1 
+                img.header__box__loop(src=require('./images/blocks/header/loop.svg'), alt="loop")
+                .header__box__title СТЕЛЛАЖИ
             a(href="#").header__box__image-wrapper-2  
-              img.header__box__image(src=require("./images/blocks/header/photo2.jpg") alt="photo2")
-            a(href="#").header__box__image-wrapper-3   
-              img.header__box__image(src=require("./images/blocks/header/photo3.jpg") alt="photo3")
+              .header__box__image_hover-2 
+                img.header__box__loop(src=require('./images/blocks/header/loop.svg'), alt="loop")
+                .header__box__title ОГРАЖДЕНИЯ
+            a(href="#").header__box__image-wrapper-3
+              .header__box__image_hover-3  
+                img.header__box__loop(src=require('./images/blocks/header/loop.svg'), alt="loop")
+                .header__box__title ШКАФЫ
             
