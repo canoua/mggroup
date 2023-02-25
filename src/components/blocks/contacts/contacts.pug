@@ -1,0 +1,12 @@
+include input.pug
+
+mixin contact 
+  section.contact 
+    .container 
+      .contact-inner 
+        form(action="#").form
+          .form-inner
+            +input('Имя', 'name')
+            +input('Телефон', 'phone')
+            +input('Email', 'email')
+          button.form__btn Отправить
