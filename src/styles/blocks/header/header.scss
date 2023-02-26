@@ -71,15 +71,6 @@
     }
   }
 
-  &__submenu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: -250px;
-    z-index: 100;
-    transition: 0.5s ease-in-out;
-  }
-
   &__search{
     display: flex;
     justify-content: space-between;
