@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     scrollbar: {
       el: ".swiper-scrollbar",
       hide: true,
+      draggable: true,
     },
   }); 
 })
