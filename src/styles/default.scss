@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 ul{
   margin: 0;
   padding: 0;
@@ -17,21 +21,3 @@ li{
   width: 1190px;
   margin: 0 auto;
 }
-
-// .bg{
-//   // position: relative;
-
-//   // &::after{
-//   //   content: '';
-//   //   position: absolute;
-//   //   left: 0;
-//   //   top: 0;
-//   //   width: 100%;
-//   //   // height: auto;
-//   //   height: 1800px;
-//   //   background-image: url('./../images/pages/main/slider/Group\ 1.png');
-//   //   background-repeat: no-repeat;
-//   //   background-size: contain;
-//   // }
-  
-// }

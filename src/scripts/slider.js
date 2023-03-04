@@ -1,7 +1,7 @@
-import Swiper, { Navigation, Parallax, Scrollbar } from "swiper";
-Swiper.use([Navigation, Parallax, Scrollbar]);
+import Swiper, { Parallax, Scrollbar } from "swiper";
+Swiper.use([Parallax, Scrollbar]);
 import 'swiper/css';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () =>{
       el: ".swiper-pagination",
       clickable: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
     scrollbar: {
       el: ".swiper-scrollbar",
       hide: true,

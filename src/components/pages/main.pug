@@ -1,57 +1,58 @@
 mixin main 
-  section.slider 
-    .container 
-      .slider-inner 
-        .swiper.mySwiper
-          .swiper-wrapper
-            .swiper-slide
-              .slide__block 
-                .slide__block__image-wrapper 
-                  img.slide__block__image(src=require('./images/pages/main/slider/slide1.jpg'), alt="photo")
-                .slide__info 
-                  h2.slide__title Стеллажи
-                  .slide__subscription
-                    |Исполнение стеллажей отличает современный 
-                    |дизайн, в совокупности с высокой надёжностью, 
-                    |долговечностью, эргономичностью и удобством 
-                    |транспортировки и сборки.
-                  a.slide__btn(href="#") Подробнее
-            .swiper-slide
-              .slide__block 
-                .slide__block__image-wrapper 
-                  img.slide__block__image(src=require('./images/pages/main/slider/slide2.jpg'), alt="photo")
-                .slide__info 
-                  h2.slide__title Шкафы
-                  .slide__subscription
-                    |Металлические шкафы имеют широкий спектр применения и различные назначения: 
-                    |хранение документов, коробов, инструментов и различного инвентаря.
-                  a.slide__btn(href="#") Подробнее
-            .swiper-slide
-              .slide__block 
-                .slide__block__image-wrapper 
-                  img.slide__block__image(src=require('./images/pages/main/slider/slide3.jpg'), alt="photo")
-                .slide__info 
-                  h2.slide__title Теплицы
-                  .slide__subscription
-                    |Современные парники из термопласта надежные, прочные и позволяют получать большой прирост урожая.
-                  a.slide__btn(href="#") Подробнее
-            .swiper-slide
-              .slide__block 
-                .slide__block__image-wrapper 
-                  img.slide__block__image(src=require('./images/pages/main/slider/slide4.jpg'), alt="photo")
-                .slide__info 
-                  h2.slide__title Ограждения
-                  .slide__subscription
-                    |Широко применяются на различных объектах: 
-                    |от спортивных площадок до территорий производственных предприятий, 
-                    |для участков городской инфраструктуры, строительных площадок.
-                  a.slide__btn(href="#") Подробнее
-        .swiper-button-next
-        .swiper-button-prev
-        .swiper-pagination
-        .swiper-scrollbar
- 
-  section.main-content
+  .slider-wrapper#slider-wrapper  
+    .container
+      section.slider 
+        .slider-inner 
+          .swiper.mySwiper
+            .swiper-wrapper
+              .swiper-slide.slide
+                .slide__block 
+                  .slide__block__image-wrapper 
+                    img.slide__block__image(src=require('./images/pages/main/slider/slide1.jpg'), alt="photo")
+                  .slide__info 
+                    h2.slide__title Стеллажи
+                    .slide__subscription
+                      |Исполнение стеллажей отличает современный 
+                      |дизайн, в совокупности с высокой надёжностью, 
+                      |долговечностью, эргономичностью и удобством 
+                      |транспортировки и сборки.
+                    a.slide__btn(href="#") Подробнее
+              .swiper-slide.slide
+                .slide__block 
+                  .slide__block__image-wrapper 
+                    img.slide__block__image(src=require('./images/pages/main/slider/slide2.jpg'), alt="photo")
+                  .slide__info 
+                    h2.slide__title Шкафы
+                    .slide__subscription
+                      |Металлические шкафы имеют широкий спектр применения и различные назначения: 
+                      |хранение документов, коробов, инструментов и различного инвентаря.
+                    a.slide__btn(href="#") Подробнее
+              .swiper-slide.slide
+                .slide__block 
+                  .slide__block__image-wrapper 
+                    img.slide__block__image(src=require('./images/pages/main/slider/slide3.jpg'), alt="photo")
+                  .slide__info 
+                    h2.slide__title Теплицы
+                    .slide__subscription
+                      |Современные парники из термопласта надежные, прочные и позволяют получать большой прирост урожая.
+                    a.slide__btn(href="#") Подробнее
+              .swiper-slide.slide
+                .slide__block 
+                  .slide__block__image-wrapper 
+                    img.slide__block__image(src=require('./images/pages/main/slider/slide4.jpg'), alt="photo")
+                  .slide__info 
+                    h2.slide__title Ограждения
+                    .slide__subscription
+                      |Широко применяются на различных объектах: 
+                      |от спортивных площадок до территорий производственных предприятий, 
+                      |для участков городской инфраструктуры, строительных площадок.
+                    a.slide__btn(href="#") Подробнее
+          //- .swiper-button-next
+          //- .swiper-button-prev
+          .swiper-pagination
+          .swiper-scrollbar
+  
+  section.main-content#main-content
     .container 
       .main-inner 
         .main__block 

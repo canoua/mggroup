@@ -17,23 +17,41 @@
   /*убрать important*/
   &-scrollbar.swiper-scrollbar-horizontal{
     opacity: 1 !important;
-    width: 808px !important;
-    margin: 0 auto;
-    left: 15% !important;
-    bottom: 150px !important;
+    bottom: -40px !important;
+    background-color: #000;
+    height: 1px !important;
   }
 }
 
+.swiper-scrollbar-drag{
+  height: 10px !important;
+  background: #0F8CD2 !important;
+  border-radius: 17px !important;
+  top: -5px !important;
+}
+
+// .swiper-button-prev{
+//   left: -50px !important;
+// }
+
 .slider{
   position: relative;
-  padding: 205px;
+  width: 808px;
+
+  &-wrapper{
+    padding-top: 205px;
+    // height: 471px;
+  }
 
   &-inner{
-    width: 808px;
+    width: 100%;
   }
 }
 
 .slide{
+  position: relative;
+  cursor: grab;
+  height: 471px;
 
   &__block{
 
@@ -54,7 +72,7 @@
     background-color: #fff;
     position: absolute;
     right: 0;
-    bottom: -46px;
+    bottom: -35px;
     padding: 10px 30px 61px 30px;
   }
 
@@ -86,5 +104,22 @@
     line-height: 148.9%;
     color: #000000;
     text-decoration: none;
+    padding-right: 63px;
+    position: relative;
+    display: block;
+
+    &::after{
+      content: '';
+      width: 40px;
+      height: 7px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-image: url('./../images/pages/main/slider/arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      // z-index: 1;
+    }
   }
 }
