@@ -1,3 +1,13 @@
+# Инструкция по установке
+
+# 1. git clone https://github.com/canoua/mggroup (клонируем репозиторий)
+
+# 2. npm install (устанавливаем зависимости)
+
+# 3. npm run serve (запуск локального сервера)
+
+# 4. npm run build (build проекта)
+
 # Сделать
 
 # 1. фавикон

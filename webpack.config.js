@@ -3,6 +3,7 @@ const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: path.join(__dirname, 'src', 'index.js'),
@@ -61,6 +62,20 @@ module.exports = {
     new MiniCssExtractPlugin({      
       filename: '[name].[contenthash].css',
     }),
+    new FaviconsWebpackPlugin({
+      logo: './src/images/blocks/header/logo.svg',
+      mode: 'webapp',
+      devMode: 'webapp',
+      prefix: 'assets/favicons/', 
+      cache: true,
+      inject: htmlPlugin => {
+        return true
+      },
+      favicons: {
+        background: '#ddd',
+        theme_color: '#333',
+      }
+    })
   ],
 
   devServer: {

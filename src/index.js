@@ -1,3 +1,4 @@
 import './styles/style.scss';
-import './scripts/app.js'
+import './scripts/slider.js';
+import './scripts/map.js';
 
