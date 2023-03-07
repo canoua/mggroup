@@ -1,16 +1,10 @@
-// console.log('map');
+console.log('map');
 
-// import ymaps from 'ymaps';
+import ymaps from 'ymaps';
 
-// ymaps.modules.require(['Map', 'Placemark'])
-//   .spread(
-//     function (Map, Placemark) {
-//       var myMap = new Map("map", {
-//           center: [55.72, 37.64],
-//           zoom: 5
-//       });
-//       myMap.geoObjects.add(
-//           new Placemark(myMap.getCenter())
-//       );
-//     },
-//   );
+ymaps.load('https://api-maps.yandex.ru/2.1/?lang=en_US').then(maps => {
+  const map = new maps.Map('map', {
+    center: [54.9924400, 73.3685900],
+    zoom: 7
+  });
+});

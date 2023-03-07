@@ -30,17 +30,12 @@
   top: -5px !important;
 }
 
-// .swiper-button-prev{
-//   left: -50px !important;
-// }
-
 .slider{
   position: relative;
   width: 808px;
 
   &-wrapper{
     padding-top: 205px;
-    // height: 471px;
   }
 
   &-inner{
@@ -119,7 +114,6 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 0 0;
-      // z-index: 1;
     }
   }
 }
